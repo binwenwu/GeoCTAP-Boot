@@ -21,7 +21,12 @@ public class UserEntity implements Serializable {
 	/**
 	 *
 	 */
+
 	@TableId
+	private Integer id;
+
+
+
 	private String username;
 	/**
 	 *

@@ -5,6 +5,7 @@
 
 	<!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.gis.geoctap.moudle01.entity.UserEntity" id="userMap">
+        <result property="id" column="id"/>
         <result property="username" column="username"/>
         <result property="password" column="password"/>
         <result property="sex" column="sex"/>

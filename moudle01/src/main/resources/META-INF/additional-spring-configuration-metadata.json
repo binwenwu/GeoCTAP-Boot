@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "mybatis-plus.mapperLocations.global-config.db-config.id-type",
+      "type": "java.lang.String",
+      "description": "Description for mybatis-plus.mapperLocations.global-config.db-config.id-type."
+  }
+] }
