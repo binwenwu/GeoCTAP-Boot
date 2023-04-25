@@ -11,6 +11,8 @@
 
     <modules>
         <module>moudle01</module>
+        <module>renren-fast</module>
+        <module>geoctap-common</module>
     </modules>
 
 </project>

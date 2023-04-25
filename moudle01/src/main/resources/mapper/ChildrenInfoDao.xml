@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gis.geoctap.moudle01.dao.ChildrenInfoDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.gis.geoctap.moudle01.entity.ChildrenInfoEntity" id="childrenInfoMap">
+        <result property="id" column="id"/>
+        <result property="childName" column="child_name"/>
+        <result property="sex" column="sex"/>
+        <result property="registerTime" column="register_time"/>
+        <result property="birthday" column="birthday"/>
+        <result property="volunteer" column="volunteer"/>
+        <result property="anotherInfo" column="another_info"/>
+        <result property="place" column="place"/>
+        <result property="disappearancePlace" column="disappearance_place"/>
+        <result property="disappearanceType" column="disappearance_type"/>
+        <result property="disappearanceTime" column="disappearance_time"/>
+        <result property="height" column="height"/>
+        <result property="feature" column="feature"/>
+        <result property="photo" column="photo"/>
+        <result property="disappearanceProvince" column="disappearance_province"/>
+        <result property="disappearanceCity" column="disappearance_city"/>
+        <result property="disappearanceDistrict" column="disappearance_district"/>
+        <result property="disappearanceLongitude" column="disappearance_longitude"/>
+        <result property="disappearanceLatitude" column="disappearance_latitude"/>
+        <result property="nowProvince" column="now_province"/>
+        <result property="nowCity" column="now_city"/>
+        <result property="nowDistrict" column="now_district"/>
+        <result property="nowLongitude" column="now_longitude"/>
+        <result property="nowLatitude" column="now_latitude"/>
+    </resultMap>
+
+
+</mapper>
