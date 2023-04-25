@@ -4,5 +4,10 @@
       "name": "mybatis-plus.mapperLocations.global-config.db-config.id-type",
       "type": "java.lang.String",
       "description": "Description for mybatis-plus.mapperLocations.global-config.db-config.id-type."
-  }
-] }
+    },
+    {
+      "name": "spring.refresh-enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.refresh-enabled."
+    }
+  ] }

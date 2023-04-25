@@ -9,12 +9,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.gis.geoctap</groupId>
-    <artifactId>moudle01</artifactId>
+    <artifactId>gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>moudle01</name>
-    <description>moudle01</description>
+    <name>gateway</name>
+    <description>gateway</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>8</java.version>
         <spring-cloud.version>2021.0.6</spring-cloud.version>
     </properties>
     <dependencies>
@@ -23,13 +23,10 @@
             <artifactId>geoctap-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
         <dependency>
@@ -38,13 +35,12 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- 支持 bootstrap.properties 或 bootstrap.yml 配置文件 -->
+
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-            <version>3.1.3</version>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
         </dependency>
-
 
     </dependencies>
     <dependencyManagement>

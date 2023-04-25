@@ -6,6 +6,8 @@ import com.gis.geoctap.moudle01.entity.ChildrenInfoEntity;
 import com.gis.geoctap.moudle01.service.ChildrenInfoService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -20,11 +22,25 @@ import java.util.Map;
  * @email ${email}
  * @date 2023-04-25 14:15:49
  */
+@RefreshScope
 @RestController
 @RequestMapping("moudle01/childreninfo")
 public class ChildrenInfoController {
     @Autowired
     private ChildrenInfoService childrenInfoService;
+
+
+
+    // TODO 配置中心测试
+    @Value("${moudle01.user.name}")
+    private String name;
+    @Value("${moudle01.user.age}")
+    private Integer age;
+    @RequestMapping("/test")
+    public R test(){
+        return R.ok().put("name", name).put("age", age);
+    }
+
 
     /**
      * 列表

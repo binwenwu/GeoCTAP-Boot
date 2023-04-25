@@ -7,11 +7,19 @@ spring:
     url: jdbc:mysql://192.168.1.135:3306/geoctap?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: moudle01
+
 
 mybatis-plus:
   mapperLocations: classpath:mapper/**/*.xml
   global-config:
     db-config:
       id-type: auto
-
+server:
+  port: 7000
 
